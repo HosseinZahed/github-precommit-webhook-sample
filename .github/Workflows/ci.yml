@@ -1,5 +1,5 @@
-# Create a default ci workflow for the python project
 name: CI
+description: This workflow is triggered on push and pull request events to the main branch.
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - main      
 
 jobs:
-    # Checkout the code from the repository
+        
     build:
         runs-on: ubuntu-latest
         steps:
