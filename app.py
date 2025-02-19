@@ -18,7 +18,7 @@ class Data(Resource):
         with open(data_file, 'r') as f:
             data = json.load(f)
         return jsonify(data)
-    
+
 api.add_resource(Data, '/data')
 
 # The default route to the server
