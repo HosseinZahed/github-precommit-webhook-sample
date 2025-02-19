@@ -1,4 +1,12 @@
-### GitHub Precommit Webhook Sample
+### GitHub Pre-commit Webhooks Sample
+
+### What are Pre-commit webhooks?
+Pre-commit webhooks in GitHub are used to ensure code quality and consistency by running scripts before a commit is made. These hooks can perform various checks and validations, such as:
+
+- **Preventing giant files from being committed**: Specify a maximum file size to prevent large files from being added to the repository5.
+- **Checking for valid Python syntax**: Ensure that Python files parse correctly5.
+- **Checking for merge conflicts**: Detect files that contain merge conflict strings5.
+- **Verifying JSON and XML syntax**: Load and verify the syntax of JSON and XML files5.
 
 ### Installing Pre-Commit Hooks in Your GitHub Repository
 
@@ -19,7 +27,7 @@ This guide provides step-by-step instructions for installing pre-commit hooks in
    ```
    repos:
    - repo: https://github.com/pre-commit/pre-commit-hooks
-     rev: v2.3.0
+     rev: v5.0.0
      hooks:
       - id: check-merge-conflict
       - id: trailing-whitespace
@@ -43,5 +51,6 @@ Uninstall pre-commit:
 
 By following these steps, you can ensure that your code meets quality standards before committing changes to your repository.
 
-Reference:
-https://pre-commit.com/
+References:
+- https://pre-commit.com/
+- https://github.com/pre-commit/pre-commit-hooks
