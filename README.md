@@ -38,6 +38,9 @@ Run hooks on all files:
 Run hooks on staged files:
 <code>pre-commit run</code>
 
+Uninstall pre-commit:
+<code>pre-commit uninstall</code>
+
 By following these steps, you can ensure that your code meets quality standards before committing changes to your repository.
 
 Reference:
